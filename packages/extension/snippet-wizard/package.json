@@ -25,7 +25,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/guesung/guesung-library",
-    "directory": "packages/extensions/snippet-wizard"
+    "directory": "packages/extension/snippet-wizard"
   },
   "icon": "logo.png",
   "scripts": {
@@ -52,6 +52,7 @@
     "npm-run-all": "^4.1.5",
     "@vscode/test-cli": "^0.0.9",
     "@vscode/test-electron": "^2.4.0",
-    "@guesung/typescript-config": "workspace:*"
+    "@guesung/typescript-config": "workspace:*",
+    "@guesung/eslint-config": "workspace:*"
   }
 }

@@ -95,6 +95,7 @@ async function getSnippetsPath(snippetType: string, languageId: string): Promise
             if (!workspaceFolders) {
                 throw new Error('No workspace folder open');
             }
+            if (!workspaceFolders[0]) return '';
             snippetsDir = path.join(workspaceFolders[0].uri.fsPath, '.vscode');
             return path.join(snippetsDir, 'snippets.code-snippets');
         case 'Language Specific Snippets':
