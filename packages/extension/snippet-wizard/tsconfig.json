@@ -1,0 +1,6 @@
+{
+  "extends": "@guesung/typescript-config/base.json",
+  "compilerOptions": {
+    "rootDir": "src"
+  }
+}
