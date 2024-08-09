@@ -6,7 +6,7 @@ Ever wanted to write code like magic? Create snippets using VSCode Snippet Wizar
 
 ### Links
 
-- [Korean README](/packages//snippet-wizard/README-ko.md)
+- [Korean README](/README-ko.md)
 - [Market Place](https://marketplace.visualstudio.com/items?itemName=guesung.snippet-wizard)
 - [Collection of Recommended VSCode Snippets](https://guesung.notion.site/VSCode-Snippet-23e480f3ce4f4877a7e9a46304c7516b)
 
