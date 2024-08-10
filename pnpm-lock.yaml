@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  '@guesung/eslint-config':
+    specifier: ^1.0.4
+    version: 1.0.4(@next/eslint-plugin-next@14.2.5)(@types/eslint@8.56.11)(@typescript-eslint/eslint-plugin@7.18.0)(@typescript-eslint/parser@7.18.0)(eslint-config-prettier@9.1.0)(eslint-config-turbo@1.13.4)(eslint-plugin-only-warn@1.1.0)(eslint@8.57.0)
   '@guesung/prettier-config':
     specifier: ^1.0.0
     version: 1.0.0(prettier@3.3.3)
@@ -38,6 +41,12 @@ devDependencies:
   npm-run-all:
     specifier: ^4.1.5
     version: 4.1.5
+  prettier:
+    specifier: ^3.3.3
+    version: 3.3.3
+  typescript:
+    specifier: ^5.5.4
+    version: 5.5.4
 
 packages:
 
@@ -289,6 +298,28 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
+  /@guesung/eslint-config@1.0.4(@next/eslint-plugin-next@14.2.5)(@types/eslint@8.56.11)(@typescript-eslint/eslint-plugin@7.18.0)(@typescript-eslint/parser@7.18.0)(eslint-config-prettier@9.1.0)(eslint-config-turbo@1.13.4)(eslint-plugin-only-warn@1.1.0)(eslint@8.57.0):
+    resolution: {integrity: sha512-PemEIPy/GSwGd5wBN5nysxVpjx6Y/9ZkjkmU7sY9Q2BEC7y5508J/wuv7V2gVemCgcM1fma3LZlYxQN1JaV3HA==}
+    peerDependencies:
+      '@next/eslint-plugin-next': ^14.0.2
+      '@types/eslint': ^8.44.7
+      '@typescript-eslint/eslint-plugin': ^6.11.0
+      '@typescript-eslint/parser': ^6.11.0
+      eslint: ^8.53.0
+      eslint-config-prettier: ^9.0.0
+      eslint-config-turbo: ^1.10.12
+      eslint-plugin-only-warn: ^1.1.0
+    dependencies:
+      '@next/eslint-plugin-next': 14.2.5
+      '@types/eslint': 8.56.11
+      '@typescript-eslint/eslint-plugin': 7.18.0(@typescript-eslint/parser@7.18.0)(eslint@8.57.0)(typescript@5.5.4)
+      '@typescript-eslint/parser': 7.18.0(eslint@8.57.0)(typescript@5.5.4)
+      eslint: 8.57.0
+      eslint-config-prettier: 9.1.0(eslint@8.57.0)
+      eslint-config-turbo: 1.13.4(eslint@8.57.0)
+      eslint-plugin-only-warn: 1.1.0
+    dev: true
+
   /@guesung/prettier-config@1.0.0(prettier@3.3.3):
     resolution: {integrity: sha512-wg/5iGNBrzKnLqvuwcKenwsL94hhcM2tGwsNZxmPmMgKWQ5NQchrUyDiJbhw/bJclKrlpErpk/TnkyubPoIG9Q==}
     peerDependencies:
@@ -377,6 +408,12 @@ packages:
       '@jridgewell/sourcemap-codec': 1.5.0
     dev: true
 
+  /@next/eslint-plugin-next@14.2.5:
+    resolution: {integrity: sha512-LY3btOpPh+OTIpviNojDpUdIbHW9j0JBYBjsIp8IxtDFfYFyORvw3yNq6N231FVqQA7n7lwaf7xHbVJlA1ED7g==}
+    dependencies:
+      glob: 10.3.10
+    dev: true
+
   /@nodelib/fs.scandir@2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -405,8 +442,23 @@ packages:
     dev: true
     optional: true
 
+  /@types/eslint@8.56.11:
+    resolution: {integrity: sha512-sVBpJMf7UPo/wGecYOpk2aQya2VUGeHhe38WG7/mN5FufNSubf5VT9Uh9Uyp8/eLJpu1/tuhJ/qTo4mhSB4V4Q==}
+    dependencies:
+      '@types/estree': 1.0.5
+      '@types/json-schema': 7.0.15
+    dev: true
+
+  /@types/estree@1.0.5:
+    resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
+    dev: true
+
   /@types/istanbul-lib-coverage@2.0.6:
     resolution: {integrity: sha512-2QF/t/auWm0lsy8XtKVPG19v3sSOQlJe/YHZgfjb/KBBHOGSV+J2q/S671rcq9uTBrLAXmZpqJiaQbMT+zNU1w==}
+    dev: true
+
+  /@types/json-schema@7.0.15:
+    resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
     dev: true
 
   /@types/mocha@10.0.7:
@@ -991,6 +1043,11 @@ packages:
       esutils: 2.0.3
     dev: true
 
+  /dotenv@16.0.3:
+    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
+    engines: {node: '>=12'}
+    dev: true
+
   /eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
@@ -1154,6 +1211,38 @@ packages:
   /escape-string-regexp@4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
+    dev: true
+
+  /eslint-config-prettier@9.1.0(eslint@8.57.0):
+    resolution: {integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==}
+    hasBin: true
+    peerDependencies:
+      eslint: '>=7.0.0'
+    dependencies:
+      eslint: 8.57.0
+    dev: true
+
+  /eslint-config-turbo@1.13.4(eslint@8.57.0):
+    resolution: {integrity: sha512-+we4eWdZlmlEn7LnhXHCIPX/wtujbHCS7XjQM/TN09BHNEl2fZ8id4rHfdfUKIYTSKyy8U/nNyJ0DNoZj5Q8bw==}
+    peerDependencies:
+      eslint: '>6.6.0'
+    dependencies:
+      eslint: 8.57.0
+      eslint-plugin-turbo: 1.13.4(eslint@8.57.0)
+    dev: true
+
+  /eslint-plugin-only-warn@1.1.0:
+    resolution: {integrity: sha512-2tktqUAT+Q3hCAU0iSf4xAN1k9zOpjK5WO8104mB0rT/dGhOa09582HN5HlbxNbPRZ0THV7nLGvzugcNOSjzfA==}
+    engines: {node: '>=6'}
+    dev: true
+
+  /eslint-plugin-turbo@1.13.4(eslint@8.57.0):
+    resolution: {integrity: sha512-82GfMzrewI/DJB92Bbch239GWbGx4j1zvjk1lqb06lxIlMPnVwUHVwPbAnLfyLG3JuhLv9whxGkO/q1CL18JTg==}
+    peerDependencies:
+      eslint: '>6.6.0'
+    dependencies:
+      dotenv: 16.0.3
+      eslint: 8.57.0
     dev: true
 
   /eslint-scope@7.2.2:
@@ -1399,6 +1488,18 @@ packages:
     engines: {node: '>=10.13.0'}
     dependencies:
       is-glob: 4.0.3
+    dev: true
+
+  /glob@10.3.10:
+    resolution: {integrity: sha512-fa46+tv1Ak0UPK1TOy/pZrIybNNt4HCv7SDzwyfiOZkvZLEbjsZkJBPtDHVshZjbecAoAGSC20MjLDG/qr679g==}
+    engines: {node: '>=16 || 14 >=14.17'}
+    hasBin: true
+    dependencies:
+      foreground-child: 3.3.0
+      jackspeak: 2.3.6
+      minimatch: 9.0.5
+      minipass: 7.1.2
+      path-scurry: 1.11.1
     dev: true
 
   /glob@10.4.5:
@@ -1794,6 +1895,15 @@ packages:
     dependencies:
       html-escaper: 2.0.2
       istanbul-lib-report: 3.0.1
+    dev: true
+
+  /jackspeak@2.3.6:
+    resolution: {integrity: sha512-N3yCS/NegsOBokc8GAdM8UcmfsKiSS8cipheD/nivzr700H+nsMOxJjQnvwOcRYVuFkdH0wGUvW2WbXGmrZGbQ==}
+    engines: {node: '>=14'}
+    dependencies:
+      '@isaacs/cliui': 8.0.2
+    optionalDependencies:
+      '@pkgjs/parseargs': 0.11.0
     dev: true
 
   /jackspeak@3.4.3:
