@@ -2,8 +2,8 @@ import vscode from 'vscode';
 import fs from 'fs';
 import { getSnippetsPath, readSnippetsFile } from './utils';
 
-export const activate = (context: vscode.ExtensionContext) =>  {
-  let disposable = vscode.commands.registerCommand(
+export const activate = (context: vscode.ExtensionContext) => {
+  let generateSnippetCommand = vscode.commands.registerCommand(
     'snippetWizard.generateSnippet',
     async () => {
       const editor = vscode.window.activeTextEditor;
@@ -90,5 +90,6 @@ export const activate = (context: vscode.ExtensionContext) =>  {
     }
   );
 
-  context.subscriptions.push(disposable);
-}
+  context.subscriptions.push(generateSnippetCommand);
+};
+
