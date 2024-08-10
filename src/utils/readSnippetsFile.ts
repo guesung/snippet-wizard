@@ -10,10 +10,8 @@ export const readSnippetsFile = async (
     fs.mkdirSync(snippetsDir, { recursive: true });
   }
 
-  if (!fs.existsSync(filePath)) {
-    return {};
-  }
-
+  if (!fs.existsSync(filePath)) return {};
+  
   try {
     const fileContent = fs.readFileSync(filePath, 'utf8');
     return JSON.parse(fileContent);

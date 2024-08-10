@@ -27,10 +27,8 @@ export const activate = (context: vscode.ExtensionContext) => {
         { placeHolder: 'Select where to save the snippet' }
       );
 
-      if (!snippetType) {
-        return;
-      }
-
+      if (!snippetType) return;
+      
       let languageId = '';
       if (snippetType === 'Language Specific Snippets') {
         languageId = editor.document.languageId;
