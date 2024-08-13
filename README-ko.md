@@ -42,6 +42,7 @@ https://github.com/user-attachments/assets/9317267d-000a-4971-9fd0-11d588ec4b59
 2. **즉각적인 스니펫 확인과 편집**
       
       생성된 스니펫 파일을 즉시 열어 확인하고 필요하다면 바로 수정할 수 있습니다.
+   
       <img width="468" alt="review_1" src="https://github.com/user-attachments/assets/b78a4fab-8e5f-4369-81e5-ba747a943ce3">
 
 ### 주요 기능
